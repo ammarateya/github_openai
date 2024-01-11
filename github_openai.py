@@ -32,7 +32,7 @@ def generate_title(code_changes):
     return response.choices[0].text.strip()
 
 
-# Example: Fetch a repository and compare code
+# Example: Fetch a repo, compare code
 repo_name = "ammarateya/github_openai"
 repo = github.get_repo(repo_name)
 old_code = repo.get_contents("hello_world.py").decoded_content.decode("utf-8")
